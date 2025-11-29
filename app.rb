@@ -11,8 +11,12 @@ end
 class Barber <ActiveRecord::Base 
 end
 
-get '/' do
+before do
 	@barbers = Barber.all
+end	
+
+get '/' do
+	
 	erb :index
 end
 get '/visit' do 

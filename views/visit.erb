@@ -1,4 +1,3 @@
-<%= @barbers %>
 <script type="text/javascript">
   $(function(){
  
@@ -30,11 +29,10 @@
       <label class="form-label">Выбирите парикмахера</label>
       <select name="barber">
         <% @barbers.each do |barber|%>
-        <option <%= @barber == barber[1] ? 'selected' : '' %>><%= barber[1] %></option>
+        <option <%= @barber == barber[1] ? 'selected' : '' %>><%= barber['name'] %></option>
         <% end %>
-       <%#  <option <%= @barber == 'Jessia' ? 'selected' : '' %>>Jessia</option> 
-        <%# <option <%= @barber == 'Gus' ? 'selected' : '' %>>Gus</option> %> %>
-     </select>  
+       
+    </select>  
     </div>
    
     <div>  
