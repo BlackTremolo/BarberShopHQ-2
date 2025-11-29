@@ -20,7 +20,7 @@ GEM
       mutex_m
       securerandom (>= 0.3)
       tzinfo (~> 2.0)
-    base64 (0.2.0)
+    base64 (0.3.0)
     benchmark (0.5.0)
     bigdecimal (3.3.1)
     bond (0.5.1)
@@ -33,11 +33,11 @@ GEM
     mini_portile2 (2.8.9)
     minitest (5.26.1)
     multi_json (1.15.0)
-    mustermann (3.0.3)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     mutex_m (0.3.0)
-    rack (3.1.15)
-    rack-protection (4.1.1)
+    rack (3.2.4)
+    rack-protection (4.2.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
@@ -46,6 +46,7 @@ GEM
       rack (>= 3.0.0)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (13.3.1)
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -56,25 +57,25 @@ GEM
       ripl (>= 0.7.0)
     ruby2_keywords (0.0.5)
     securerandom (0.3.2)
-    sinatra (4.1.1)
+    sinatra (4.2.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
       rack (>= 3.0.0, < 4)
-      rack-protection (= 4.1.1)
+      rack-protection (= 4.2.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     sinatra-activerecord (2.0.28)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sinatra-contrib (4.1.1)
+    sinatra-contrib (4.2.1)
       multi_json (>= 0.0.2)
       mustermann (~> 3.0)
-      rack-protection (= 4.1.1)
-      sinatra (= 4.1.1)
+      rack-protection (= 4.2.1)
+      sinatra (= 4.2.1)
       tilt (~> 2.0)
     sqlite3 (1.7.3)
       mini_portile2 (~> 2.8.0)
-    tilt (2.6.0)
+    tilt (2.6.1)
     timeout (0.4.4)
     tux (0.3.0)
       ripl (>= 0.3.5)
@@ -85,11 +86,11 @@ GEM
       concurrent-ruby (~> 1.0)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
   activerecord
+  rake
   sinatra
   sinatra-activerecord
   sinatra-contrib
