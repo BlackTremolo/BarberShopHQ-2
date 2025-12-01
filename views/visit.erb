@@ -12,24 +12,24 @@
 <form action="/visit" method="POST">
     <div>
       <label class="form-label">Ваше имя</label>
-      <input name="client[name]" type="text"  class="form-control" placeholder="Введите ваше имя">
+      <input name="client[name]" type="text"  class="form-control" placeholder="Введите ваше имя" value="<%= @c.name%>">
     </div>
 
     <div>
       <label class="form-label">Ваш телефон</label>
-      <input name="client[phone]" type="text"  class="form-control" placeholder="Введите ваш номер">
+      <input name="client[phone]" type="text"  class="form-control" placeholder="Введите ваш номер" value="<%= @c.phone%>">
     </div>
 
     <div>
       <label class="form-label">Когда хотите прийти?</label>
-      <input id="datetimepicker" name="client[datestamp]" type="text"  class="form-control" placeholder="Дата и время">
+      <input id="datetimepicker" name="client[datestamp]" type="text"  class="form-control" placeholder="Дата и время" value="<%= @c.datestamp %>">
     </div>
 
    
    
     <div>  
       <label class="form-label">Выбирите цвет</label>
-      <select id="color" name="client[color]">
+      <select id="color" name="client[color]" value="<%= @c.color %>">
         <option value="#7bd148">Green</option>
         <option value="#5484ed">Bold blue</option>
         <option value="#a4bdfc">Blue</option>
