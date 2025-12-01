@@ -19,13 +19,10 @@ get '/' do
 	
 	erb :index
 end
+
 get '/visit' do 
 	erb :visit
 end	
-
-get '/contacts' do 
-	erb :contacts
-end
 
 post '/visit' do 
 	@username = params[:username]
@@ -33,4 +30,13 @@ post '/visit' do
 	@datestamp = params[:datestamp]
 	@barber = params[:barber]
 	@color = params[:color]
+
+	c = Client.new
+	c.name = @username
+	c.phone = @phone
+	c.datestamp = @datestamp
+	c.barber = @barber
+	c.color = @color
+	c.save
+	erb 'Вы записались'
 end
